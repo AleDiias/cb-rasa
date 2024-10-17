@@ -104,7 +104,7 @@ responses:
       Certo, qual problema você esta enfrentando?
 
   utter_encaminhar_suporte:
-  - text: "Anotei aqui seu problema e estarei lhe encaminhando para um de nosso técnicos lhe auxiliar com ele, por favor aguarde alguns minutinhos!"
+  - text: "Anotei aqui seu problema e estarei lhe encaminhando para um de nosso técnicos do suporte lhe auxiliar com ele, por favor aguarde alguns minutinhos!"
 
   utter_comercial:
   - text: |
