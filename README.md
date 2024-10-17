@@ -10,8 +10,8 @@
 1. **Clone o repositório:**
 
    ```bash
-   git clone <URL_DO_SEU_REPOSITORIO>
-   cd <NOME_DA_PASTA_DO_REPOSITORIO>
+   git clone [<URL_DO_SEU_REPOSITORIO>](https://github.com/AleDiias/cb-rasa.git)
+   acesse o diretório
    ```
 
 2. **Crie e ative um ambiente virtual:**
