@@ -11,8 +11,8 @@
 
    ```bash
    git clone https://github.com/AleDiias/cb-rasa.git
-   acesse o diretório
    ```
+   acesse o diretório
 
 2. **Crie e ative um ambiente virtual:**
 
