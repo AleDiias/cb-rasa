@@ -1,0 +1,130 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - despedir
+  - afirmar
+  - negar
+  - cancelar
+  - informar
+  - tudo_bem
+  - suporte_tecnico
+  - comercial
+  - cobranca
+  - problema
+  - triste
+  - feliz
+
+
+entities:
+  - nome
+  - empresa
+
+slots:
+  nome:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nome
+      intent: informar
+  empresa:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: empresa
+      intent: informar
+
+forms:
+  exemplo_forms:
+    required_slots:
+      - nome
+      - empresa
+
+responses:
+
+  utter_fallback:
+  - text: |
+      Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito
+      Você pode perguntar de novo de outro jeito?
+  - text: |
+      Hummmm... Não sei se entendi. Pode escrever de outra forma?
+  - text: |
+      Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
+  - text: |
+      Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+
+  utter_saudacao:
+  - text: |
+      Oi, eu sou a Lucy, a assistente virtual da Vonix!
+      Sobre o que vamos tratar hoje?
+
+  utter_feliz:
+  - text: "Que ótimo saber que você está feliz! 😊 O que está fazendo você se sentir assim?"
+  - text: "Fico feliz em ouvir isso! Se precisar de algo, estou aqui para ajudar."
+  - text: "A felicidade é contagiante! O que te deixou tão alegre hoje?"
+  - text: "Maravilha! É sempre bom estar feliz. Posso te ajudar com algo?"
+  - text: "Isso é maravilhoso! A felicidade é importante. Como posso contribuir para o seu bem-estar?"
+
+  utter_despedir:
+   - text: |
+      Foi um prazer te ajudar!
+      Sempre que tiver alguma dúvida, volte aqui!
+      Até logo!
+   - text: |
+      Foi um prazer te ajudar!
+      Sempre que precisar, volte aqui!
+      Até a próxima!
+   - text: |
+      Foi um prazer te ajudar!
+      Quando surgir alguma dúvida, volte aqui!
+      Até mais!
+
+  utter_tudo_bem:
+  - text: |
+      Tudo bem, obrigada! Em que posso te ajudar?
+
+  utter_continuar_conversa:
+  - text: E aí, qual nosso próximo assunto?
+  - text: Quer conversar sobre outra coisa?
+  - text: Gostaria de falar sobre algo mais?
+
+  utter_ask_nome:
+  - text: Qual o seu nome?
+
+  utter_ask_empresa:
+  - text: Qual nome da sua empresa?
+
+  utter_pergunta_cancelar:
+  - text: Entendi. Você deseja cancelar?
+
+  utter_suporte_tecnico:
+  - text: |
+      Certo, qual problema você esta enfrentando?
+
+  utter_encaminhar_suporte:
+  - text: "Anotei aqui seu problema e estarei lhe encaminhando para um de nosso técnicos lhe auxiliar com ele, por favor aguarde alguns minutinhos!"
+
+  utter_comercial:
+  - text: |
+      Shoow, eu anotei aqui e estou te encaminhando para falar diretamente com um de nossos analistas comerciais, por favor aguarde um instante!.
+
+  utter_cobranca:
+  - text: |
+       Anotei aqui sobre oque deseja conversar e estou lhe encaminhando para falar com um de nossos analistas de cobrança, por favor aguarde um instante!.
+
+  utter_cheer_up:
+  - text: "Aqui esta algo que vai te animar:"
+    image: "https://i.pinimg.com/enabled_hi/564x/ca/32/6a/ca326a6b7c4dc2d5291a0a0d71d2e337.jpg"
+
+
+  # utters fallback
+  utter_nlu_fallback:
+  - text: "Desculpe, não consegui entender sua mensagem. Poderia escrever novamente?"
+  utter_core_fallback:
+  - text: "Desculpe, não consegui encontrar uma resposta pra sua mensagem. Digite /restart para recomeçar a conversa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

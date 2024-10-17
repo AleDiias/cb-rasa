@@ -1,0 +1,474 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - hey
+    - olá
+    - Ola
+    - Oi
+    - Iae
+    - Olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - dia
+    - tarde
+    - noite
+    - eii
+    - ei
+    - Oii
+    - oiii
+    - esta ai?
+    - e aí?
+    - fala aí
+    - opa
+    - salve
+    - alô
+    - oi oi
+    - boa
+    - saudação
+    - como está?
+    - fala
+    - oi, pessoal
+    - E aí
+    - olá, pessoal
+    - oi, tudo certo?
+
+- intent: despedir
+  examples: |
+    - até
+    - te vejo depois
+    - adeus
+    - bye
+    - goodbye
+    - tenha um ótimo dia
+    - até depois
+    - flw
+    - falou
+    - até mais
+    - Obrigado, isso é tudo
+    - Valeu, até mais
+
+- intent: afirmar
+  examples: |
+    - sim
+    - confirmo
+    - afirmo
+    - claro
+    - exato
+    - isso mesmo
+    - concordo
+    - isso mesmo!
+    - positivo
+    - isso
+    - siim
+    - exatamente
+
+- intent: negar
+  examples: |
+    - não
+    - nao
+    - nao conheco
+    - não quero
+    - nego
+    - negativo
+    - ainda não sei
+    - naao
+    - no
+    - negativo
+
+- intent: cancelar
+  examples: |
+    - sair
+    - Desisto
+    - Para
+    - Cancela
+    - Sai disso
+    - Me tira daqui
+    - Para com isso
+    - Me tira disso
+    - Quero cancelar
+    - Saia dessa conversa
+    - Não quero mais isso
+    - Cancele esta operação
+    - Para de me perguntar coisas
+    - cansei, não quero responder!
+    - Pare o que você está fazendo
+    - Que loucura está acontecendo?!
+    - Não quero compartilhar meus dados
+    - Não quero mais informar meus dados
+
+- intent: informar
+  examples: |
+    - [Alexandre](nome)
+    - O meu nome é [Alexandre](nome)
+    - me chamo [Alexandre](nome)
+    - Meu nome: [Alexandre](nome)
+    - Claro, meu nome é [Alexandre](nome)
+    - [Fabiano](nome)
+    - O meu nome é [Fabiano](nome)
+    - me chamo [Fabiano](nome)
+    - Meu nome: [Fabiano](nome)
+    - Claro, meu nome é [Fabiano](nome)
+    - [Luiz](nome)
+    - O meu nome é [Luiz](nome)
+    - me chamo [Luiz](nome)
+    - Meu nome: [Luiz](nome)
+    - Claro, meu nome é [Luiz](nome)
+    - [Bruno](nome)
+    - O meu nome é [Bruno](nome)
+    - me chamo [Bruno](nome)
+    - Meu nome: [Bruno](nome)
+    - Claro, meu nome é [Bruno](nome)
+    - [Amilcar](nome)
+    - O meu nome é [Amilcar](nome)
+    - me chamo [Amilcar](nome)
+    - Meu nome: [Amilcar](nome)
+    - Claro, meu nome é [Amilcar](nome)
+    - [Rodrigo](nome)
+    - O meu nome é [Rodrigo](nome)
+    - me chamo [Rodrigo](nome)
+    - Meu nome: [Rodrigo](nome)
+    - Claro, meu nome é [Rodrigo](nome)
+    - [Nurimba](nome)
+    - O meu nome é [Nurimba](nome)
+    - me chamo [Nurimba](nome)
+    - Meu nome: [Nurimba](nome)
+    - Claro, meu nome é [Nurimba](nome)
+    - [Maria](nome)
+    - O meu nome é [Maria](nome)
+    - me chamo [Maria](nome)
+    - Meu nome: [Maria](nome)
+    - Claro, meu nome é [Maria](nome)
+    - [Ana](nome)
+    - O meu nome é [Ana](nome)
+    - me chamo [Ana](nome)
+    - Meu nome: [Ana](nome)
+    - Claro, meu nome é [Ana](nome)
+    - [Carlos](nome)
+    - O meu nome é [Carlos](nome)
+    - me chamo [Carlos](nome)
+    - Meu nome: [Carlos](nome)
+    - Claro, meu nome é [Carlos](nome)
+    - [João](nome)
+    - O meu nome é [João](nome)
+    - me chamo [João](nome)
+    - Meu nome: [João](nome)
+    - Claro, meu nome é [João](nome)
+    - [Lucas](nome)
+    - O meu nome é [Lucas](nome)
+    - me chamo [Lucas](nome)
+    - Meu nome: [Lucas](nome)
+    - Claro, meu nome é [Lucas](nome)
+    - [Pedro](nome)
+    - O meu nome é [Pedro](nome)
+    - me chamo [Pedro](nome)
+    - Meu nome: [Pedro](nome)
+    - Claro, meu nome é [Pedro](nome)
+    - [Júlia](nome)
+    - O meu nome é [Júlia](nome)
+    - me chamo [Júlia](nome)
+    - Meu nome: [Júlia](nome)
+    - Claro, meu nome é [Júlia](nome)
+    - [Gabriel](nome)
+    - O meu nome é [Gabriel](nome)
+    - me chamo [Gabriel](nome)
+    - Meu nome: [Gabriel](nome)
+    - Claro, meu nome é [Gabriel](nome)
+    - [Mateus](nome)
+    - O meu nome é [Mateus](nome)
+    - me chamo [Mateus](nome)
+    - Meu nome: [Mateus](nome)
+    - Claro, meu nome é [Mateus](nome)
+    - [Sofia](nome)
+    - O meu nome é [Sofia](nome)
+    - me chamo [Sofia](nome)
+    - Meu nome: [Sofia](nome)
+    - Claro, meu nome é [Sofia](nome)
+    - [Miguel](nome)
+    - O meu nome é [Miguel](nome)
+    - me chamo [Miguel](nome)
+    - Meu nome: [Miguel](nome)
+    - Claro, meu nome é [Miguel](nome)
+    - [Isabela](nome)
+    - O meu nome é [Isabela](nome)
+    - me chamo [Isabela](nome)
+    - Meu nome: [Isabela](nome)
+    - Claro, meu nome é [Isabela](nome)
+    - [Thiago](nome)
+    - O meu nome é [Thiago](nome)
+    - me chamo [Thiago](nome)
+    - Meu nome: [Thiago](nome)
+    - Claro, meu nome é [Thiago](nome)
+    - [Rafael](nome)
+    - O meu nome é [Rafael](nome)
+    - me chamo [Rafael](nome)
+    - Meu nome: [Rafael](nome)
+    - Claro, meu nome é [Rafael](nome)
+    - [Larissa](nome)
+    - O meu nome é [Larissa](nome)
+    - me chamo [Larissa](nome)
+    - Meu nome: [Larissa](nome)
+    - Claro, meu nome é [Larissa](nome)
+    - [Guilherme](nome)
+    - O meu nome é [Guilherme](nome)
+    - me chamo [Guilherme](nome)
+    - Meu nome: [Guilherme](nome)
+    - Claro, meu nome é [Guilherme](nome)
+    - [Vonix](empresa)
+    - Minha empresa é [Vonix](empresa)
+    - Nome da empresa [Vonix](empresa)
+    - Claro, nome da empresa é [Vonix](empresa)
+    - empresa [Vonix](empresa)
+    - [MegaTech](empresa)
+    - Minha empresa é [MegaTech](empresa)
+    - Nome da empresa [MegaTech](empresa)
+    - Claro, nome da empresa é [MegaTech](empresa)
+    - empresa [MegaTech](empresa)
+    - [SoftCorp](empresa)
+    - Minha empresa é [SoftCorp](empresa)
+    - Nome da empresa [SoftCorp](empresa)
+    - Claro, nome da empresa é [SoftCorp](empresa)
+    - empresa [SoftCorp](empresa)
+    - [InovaPlus](empresa)
+    - Minha empresa é [InovaPlus](empresa)
+    - Nome da empresa [InovaPlus](empresa)
+    - Claro, nome da empresa é [InovaPlus](empresa)
+    - empresa [InovaPlus](empresa)
+    - [TechWave](empresa)
+    - Minha empresa é [TechWave](empresa)
+    - Nome da empresa [TechWave](empresa)
+    - Claro, nome da empresa é [TechWave](empresa)
+    - empresa [TechWave](empresa)
+    - [NextGen](empresa)
+    - Minha empresa é [NextGen](empresa)
+    - Nome da empresa [NextGen](empresa)
+    - Claro, nome da empresa é [NextGen](empresa)
+    - empresa [NextGen](empresa)
+    - [FutureSoft](empresa)
+    - Minha empresa é [FutureSoft](empresa)
+    - Nome da empresa [FutureSoft](empresa)
+    - Claro, nome da empresa é [FutureSoft](empresa)
+    - empresa [FutureSoft](empresa)
+    - [AlphaSys](empresa)
+    - Minha empresa é [AlphaSys](empresa)
+    - Nome da empresa [AlphaSys](empresa)
+    - Claro, nome da empresa é [AlphaSys](empresa)
+    - empresa [AlphaSys](empresa)
+    - [CloudSync](empresa)
+    - Minha empresa é [CloudSync](empresa)
+    - Nome da empresa [CloudSync](empresa)
+    - Claro, nome da empresa é [CloudSync](empresa)
+    - empresa [CloudSync](empresa)
+    - [DataFlow](empresa)
+    - Minha empresa é [DataFlow](empresa)
+    - Nome da empresa [DataFlow](empresa)
+    - Claro, nome da empresa é [DataFlow](empresa)
+    - empresa [DataFlow](empresa)
+    - [NetSolutions](empresa)
+    - Minha empresa é [NetSolutions](empresa)
+    - Nome da empresa [NetSolutions](empresa)
+    - Claro, nome da empresa é [NetSolutions](empresa)
+    - empresa [NetSolutions](empresa)
+    - [Nurimba](empresa)
+    - Minha empresa é [Nurimba](empresa)
+    - Nome da empresa [Nurimba](empresa)
+    - Claro, nome da empresa é [Nurimba](empresa)
+    - empresa [Nurimba](empresa)
+    - [empresa](empresa)
+    - Minha empresa é [empresa](empresa)
+    - Nome da empresa [empresa](empresa)
+    - Claro, nome da empresa é [empresa](empresa)
+    - empresa [empresa](empresa)
+
+- intent: tudo_bem
+  examples: |
+    - tudo bem
+    - como vai voce
+    - como vao as coisas
+    - opa tudo bem
+    - to bem
+    - tranquilo
+    - estou bem
+    - estou otimo
+    - tudo bem e você
+    - tudo bom
+    - tá bem
+    - ta bem
+    - como vocês esta
+    - como voce esta
+    - como voce ta
+    - como vai você
+    - como vai vc
+
+- intent: suporte_tecnico
+  examples: |
+      - Preciso de ajuda
+      - Estou com problemas técnicos
+      - O sistema está com erro
+      - O sistema nao funciona
+      - Meu aplicativo não está funcionando
+      - Me ajuda
+      - ajuda
+      - Estou com um problema no meu serviço
+      - Preciso de ajuda técnica
+      - Minha operadora esta fora
+      - Existe um ticket aberto para mim?
+      - Estou precisando verificar um ticket
+      - Meu ticket está pendente?
+      - Preciso de suporte técnico
+      - estou precisando de auxilio com minha ferramenta
+      - ajuda urgente
+      - urgente
+      - Preciso de assistência técnica
+      - Quem pode me ajudar com esse problema?
+      - Há algum técnico disponível?
+      - Estou com dificuldade de usar o sistema
+      - O suporte pode me ajudar?
+
+
+- intent: problema
+  examples: |
+      - A ferramenta está fora do ar
+      - Não consigo finalizar uma tarefa no sistema
+      - Meu computador está lento
+      - Está tudo travando
+      - Preciso de um técnico com urgência
+      - Alguém pode verificar esse problema?
+      - Preciso abrir um ticket
+      - Não consigo resolver o problema sozinho
+      - Pode me auxiliar?
+      - Suporte urgente por favor
+      - Está dando erro na tela
+      - O sistema não carrega
+      - Meu sistema travou
+      - Preciso de suporte agora
+      - O aplicativo fechou sozinho
+      - Estou enfrentando um bug
+      - Não consigo acessar o sistema
+      - Meu acesso foi bloqueado
+      - Não consigo logar no sistema
+      - Estou com um problema de conexão
+      - Minha operadora está fora
+      - meu discador parou
+      - parou tudo aqui
+      - travou o painel
+      - painel caiu
+      - meu ramal não conecta
+      - ramal com erro
+      - ramal não registra
+      - chamada muda
+      - chamada com ruído
+      - estou com um ramal com problema
+      - discador parado
+      - não consigo fazer chamadas no discador
+      - chamadas não estão sendo completadas
+      - meu e-mail não está enviando
+      - e-mails não estão sendo recebidos
+      - problema ao enviar e-mails
+      - o e-mail está voltando com erro
+      - meu WhatsApp parou de funcionar
+      - não consigo enviar mensagens no WhatsApp
+      - mensagens do WhatsApp não estão sendo entregues
+      - estou com problemas de envio no WhatsApp
+      - chamadas de WhatsApp não conectam
+      - estou recebendo mensagens duplicadas no WhatsApp
+      - minha integração com o WhatsApp parou
+      - discador não faz login
+      - erro ao carregar contatos no discador
+      - o painel do discador não mostra as estatísticas
+      - chamadas sendo encerradas automaticamente no discador
+      - discador não está registrando as chamadas
+      - não estou encontrando a gravação
+      - preciso de treinamento
+      - duvida sobre analisador de áudio
+
+- intent: comercial
+  examples: |
+      - Gostaria de saber mais sobre seus produtos
+      - Quero saber mais sobre o produto
+      - Estou interessado em produtos de call center
+      - Quais os valores?
+      - Como posso comprar um produto?
+      - Estou interessado em uma promoção
+      - Você tem novidades em produtos?
+      - Vocês vendem PAs?
+      - O que tem disponível para call centers?
+      - Gostaria de uma demonstração
+      - Quero mais informações sobre preços e planos
+      - Qual o custo dos serviços de vocês?
+      - Vocês oferecem descontos?
+      - Como posso adquirir os produtos de vocês?
+      - Estou interessado em adquirir um serviço
+      - Como funciona o processo de compra?
+      - Quais são as condições de pagamento?
+      - Vocês oferecem algum tipo de suporte pós-venda?
+      - Qual é o diferencial dos seus produtos?
+      - Estou interessado em fechar uma parceria
+      - Vocês têm planos corporativos?
+      - Como posso obter uma cotação?
+      - Gostaria de saber mais sobre os pacotes disponíveis
+      - Vocês oferecem soluções customizadas?
+      - Quais são os produtos mais vendidos?
+      - Existe algum pacote promocional?
+
+- intent: cobranca
+  examples: |
+      - Estou com uma dúvida na minha fatura
+      - Quero renegociar minha fatura
+      - Segunda via do boleto
+      - Dúvida sobre o pagamento
+      - Dúvida sobre a quantidade de PAs usada
+      - Quero saber sobre meu boleto
+      - Existe uma cobrança pendente para mim?
+      - Como posso regularizar minha conta?
+      - Quero saber sobre minhas cobranças
+      - Tenho um boleto pendente?
+      - Qual o valor da fatura pendente?
+      - Preciso atualizar meu boleto
+      - Como faço para pagar meu boleto?
+      - Tenho algum débito em aberto?
+      - Gostaria de renegociar meu débito
+      - Meu pagamento foi processado?
+      - Como faço para parcelar minha dívida?
+      - Vocês oferecem descontos para quitação?
+      - Meu boleto não chegou, como posso obter uma nova via?
+      - Preciso de ajuda com a fatura deste mês
+
+- intent: feliz
+  examples: |
+      - Estou muito feliz
+      - Estou super contente
+      - Estou radiante
+      - Me sinto ótimo
+      - Estou em um ótimo momento
+      - Estou muito animado
+      - Estou satisfeito com o serviço
+      - Estou feliz com a minha compra
+      - Estou feliz com a minha experiência
+      - Estou muito agradecido
+      - Estou feliz por estar aqui
+      - Isso me deixa muito feliz
+      - Estou cheio de alegria
+      - Que dia maravilhoso!
+      - Estou no topo do mundo
+      - Estou sorrindo de orelha a orelha
+
+- intent: triste
+  examples: |
+      - Estou me sentindo triste
+      - Estou muito desanimado
+      - Sinto que algo não está certo
+      - Estou decepcionado
+      - Estou infeliz com a situação
+      - Não estou bem hoje
+      - Estou me sentindo para baixo
+      - Estou preocupado
+      - Estou chateado com o serviço
+      - Estou passando por um momento difícil
+      - Isso me deixou triste
+      - Estou me sentindo só
+      - Estou desmotivado
+      - Não consigo parar de pensar nisso
+      - Estou angustiado

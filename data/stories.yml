@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: saudacao
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- story: Despedir
+  steps:
+  - intent: despedir
+  - action: utter_despedir
+
+- story: Tudo Bem 
+  steps:
+  - intent: tudo_bem
+  - action: utter_tudo_bem
+
+- story: Suporte Tecnico
+  steps:
+  - intent: suporte_tecnico
+  - action: utter_ask_nome
+  - intent: informar
+    entities:
+     - nome
+  - action: utter_ask_empresa
+  - intent: informar
+    entities:
+     - empresa
+  - action: utter_suporte_tecnico
+  - intent: problema
+  - action: utter_encaminhar_suporte
+
+- story: Comercial
+  steps:
+  - intent: comercial
+  - action: utter_comercial
+
+- story: Cobranca
+  steps:
+  - intent: cobranca
+  - action: utter_cobranca
+
+- story: Feliz
+  steps:
+  - intent: feliz
+  - action: utter_feliz
+  - action: utter_continuar_conversa
+
+- story: Triste
+  steps:
+  - intent: triste
+  - action: utter_cheer_up
+  - action: utter_continuar_conversa
+
+- story: Cancelar ação
+  steps:
+  - intent: cancelar
+  - action: utter_pergunta_cancelar
