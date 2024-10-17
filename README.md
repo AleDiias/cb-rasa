@@ -10,7 +10,7 @@
 1. **Clone o repositório:**
 
    ```bash
-   git clone [<URL_DO_SEU_REPOSITORIO>](https://github.com/AleDiias/cb-rasa.git)
+   git clone https://github.com/AleDiias/cb-rasa.git
    acesse o diretório
    ```
 
