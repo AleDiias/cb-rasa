@@ -17,14 +17,14 @@
 2. **Crie e ative um ambiente virtual:**
 
    ```bash
-   python3 -m venv r_env
-   source r_env/bin/activate
+   python3.8 -m venv env
+   source env/bin/activate
    ```
 
-3. **Instale as dependências:**
+3. **Instale as dependências do rasa:**
 
    ```bash
-   pip install -r requirements.txt
+   pip install rasa
    ```
 
 ## Comandos para rodar o Rasa
@@ -40,6 +40,9 @@
   ```bash
   rasa train
   ```
+
+## Observação
+- Para funcionar o chatbot no rasa shell, precisa ser feito o rasa train antes!!
 
 - Para rodar as ações personalizadas:
 
